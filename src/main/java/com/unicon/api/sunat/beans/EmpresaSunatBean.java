@@ -1,4 +1,4 @@
-package com.unicon.api.serviceapisunat.beans;
+package com.unicon.api.sunat.beans;
 
 import java.io.Serializable;
 

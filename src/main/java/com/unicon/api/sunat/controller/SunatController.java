@@ -1,6 +1,6 @@
-package com.unicon.api.serviceapisunat.controller;
+package com.unicon.api.sunat.controller;
 
-import com.unicon.api.serviceapisunat.beans.EmpresaSunatBean;
+import com.unicon.api.sunat.beans.EmpresaSunatBean;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.GetMapping;

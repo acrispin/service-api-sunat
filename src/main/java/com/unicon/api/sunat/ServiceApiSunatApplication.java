@@ -1,4 +1,4 @@
-package com.unicon.api.serviceapisunat;
+package com.unicon.api.sunat;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

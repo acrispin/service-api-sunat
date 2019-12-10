@@ -1,4 +1,4 @@
-package com.unicon.api.serviceapisunat;
+package com.unicon.api.sunat;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;

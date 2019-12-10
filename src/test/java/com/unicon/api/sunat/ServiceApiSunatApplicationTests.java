@@ -1,4 +1,4 @@
-package com.unicon.api.serviceapisunat;
+package com.unicon.api.sunat;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
