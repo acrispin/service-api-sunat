@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.unicon.api.sunat.mapper.ISunatMapper">
+
+    <!--@since 20191210 ACRISPIN | Mapper para sunat-->
+    <resultMap id="selectEmpresaByRucMap" type="com.unicon.api.sunat.beans.EmpresaSunatBean">
+        <result property="ruc" column="ruc"/>
+        <result property="razonSocial" column="razonSocial"/>
+        <result property="estadoContribuyente" column="estadoContribuyente"/>
+        <result property="condicionDomicilio" column="condicionDomicilio"/>
+        <result property="ubigeo" column="ubigeo"/>
+        <result property="tipoVia" column="tipoVia"/>
+        <result property="nombreVia" column="nombreVia"/>
+        <result property="codigoZona" column="codigoZona"/>
+        <result property="tipoZona" column="tipoZona"/>
+        <result property="numeroDomicilio" column="numeroDomicilio"/>
+        <result property="interiorDomicilio" column="interiorDomicilio"/>
+        <result property="lote" column="lote"/>
+        <result property="numeroDepartamento" column="numeroDepartamento"/>
+        <result property="manzana" column="manzana"/>
+        <result property="kilometro" column="kilometro"/>
+    </resultMap>
+
+    <!--@since 20191210 ACRISPIN | Mapper para sunat-->
+    <select id="selectById"
+            parameterType="java.util.Map"
+            resultMap="selectEmpresaByRucMap">
+        SELECT	ruc AS ruc,
+                raz_soc AS razonSocial,
+                est_con AS estadoContribuyente,
+                con_dom AS condicionDomicilio,
+                ubi AS ubigeo,
+                ti_via AS tipoVia,
+                nom_via AS nombreVia,
+                cod_zon AS codigoZona,
+                ti_zon AS tipoZona,
+                num_dom AS numeroDomicilio,
+                int_dom AS interiorDomicilio,
+                lte AS lote,
+                nro_dep AS numeroDepartamento,
+                mzn AS manzana,
+                kmt AS kilometro
+        FROM TOAT.dbo.rucs_sunat WITH(NOLOCK)
+        WHERE ruc = #{ruc}
+    </select>
+
+</mapper>
