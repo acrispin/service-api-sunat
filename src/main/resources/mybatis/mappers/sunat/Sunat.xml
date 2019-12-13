@@ -25,6 +25,7 @@
     <select id="selectById"
             parameterType="java.util.Map"
             resultMap="selectEmpresaByRucMap">
+        DECLARE @v_ruc VARCHAR(20) = #{ruc};
         SELECT	ruc AS ruc,
                 raz_soc AS razonSocial,
                 est_con AS estadoContribuyente,
@@ -41,7 +42,7 @@
                 mzn AS manzana,
                 kmt AS kilometro
         FROM TOAT.dbo.rucs_sunat WITH(NOLOCK)
-        WHERE ruc = #{ruc}
+        WHERE ruc = @v_ruc
     </select>
 
 </mapper>
