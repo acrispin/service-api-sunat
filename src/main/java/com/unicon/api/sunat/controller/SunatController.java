@@ -1,6 +1,6 @@
 package com.unicon.api.sunat.controller;
 
-import com.unicon.api.sunat.beans.EmpresaSunatBean;
+import com.unicon.api.commons.beans.sunat.EmpresaSunatBean;
 import com.unicon.api.sunat.service.ISunatService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

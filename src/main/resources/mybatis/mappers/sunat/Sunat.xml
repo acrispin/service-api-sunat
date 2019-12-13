@@ -3,7 +3,7 @@
 <mapper namespace="com.unicon.api.sunat.mapper.ISunatMapper">
 
     <!--@since 20191210 ACRISPIN | Mapper para sunat-->
-    <resultMap id="selectEmpresaByRucMap" type="com.unicon.api.sunat.beans.EmpresaSunatBean">
+    <resultMap id="selectEmpresaByRucMap" type="com.unicon.api.commons.beans.sunat.EmpresaSunatBean">
         <result property="ruc" column="ruc"/>
         <result property="razonSocial" column="razonSocial"/>
         <result property="estadoContribuyente" column="estadoContribuyente"/>

@@ -1,8 +1,8 @@
 package com.unicon.api.sunat.dao;
 
+import com.unicon.api.commons.beans.sunat.EmpresaSunatBean;
 import com.unicon.api.commons.db.dao.DaoApplication;
 import com.unicon.api.commons.db.dao.enums.EConnectionType;
-import com.unicon.api.sunat.beans.EmpresaSunatBean;
 import com.unicon.api.sunat.mapper.ISunatMapper;
 import lombok.extern.log4j.Log4j2;
 import org.apache.logging.log4j.Logger;

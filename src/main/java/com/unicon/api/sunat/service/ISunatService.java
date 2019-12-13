@@ -1,6 +1,6 @@
 package com.unicon.api.sunat.service;
 
-import com.unicon.api.sunat.beans.EmpresaSunatBean;
+import com.unicon.api.commons.beans.sunat.EmpresaSunatBean;
 
 public interface ISunatService {
 
